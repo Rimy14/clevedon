@@ -9,7 +9,7 @@ Ensure you have **Node.js** (v18 or higher) and **npm** installed.
 ### Step-by-Step Installation
 
 1. **Clone the repository:**
-   git clone https://github.com/Rimy14/Gym-Landing-3.git
+   git clone https://github.com/Rimy14/clevedon.git
 
 2. **Install dependencies:**
    npm install
