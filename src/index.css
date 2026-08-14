@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #ffffff;
+    color: #1a1f26;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif-luxury {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom Clean Luxury Typography & Utilities */
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Elegant Muted Gold Palette */
+.bg-gold {
+  background-color: #c5a059;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #c5a059 0%, #b59238 100%);
+}
+
+.text-gold {
+  color: #b59238;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #b59238 0%, #8c6d1f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold {
+  border-color: #c5a059;
+}
+
+.border-gold-soft {
+  border-color: rgba(197, 160, 89, 0.3);
+}
+
+/* Soft Shadows & Clean Cards */
+.clean-card {
+  background-color: #ffffff;
+  border: 1px solid #e8e4dc;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.clean-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clean-card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px -8px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  border-color: #c5a059;
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #efece6;
+}
+
+.gold-shadow {
+  box-shadow: 0 8px 25px -5px rgba(197, 160, 89, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f6f3;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b59238;
+}
